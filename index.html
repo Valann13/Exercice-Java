@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice Javascript</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="Favicom/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Favicom/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Favicom/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<!--Navigation-->
+
+
+<body>
+
+<header>
+  <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-warning ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Javascript</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="#Exercice1">Excercice 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Exercice2">Excercice 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Exercice3">Excercice 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#Exercice4"  >Excercice 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#Exercice5">Excercice 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#Exercice6"  >Excercice 6</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+  <!--Exercice1-->
+
+  <div class="container-fluid  containerP" id="Exercice1">
+    <div class="container-md text-center">
+      <h1>EXERCICE N°1 IMPOTS</h1>
+      <div class="row">
+        <div class="col bg-light  text-dark text-center">
+          <h2>Habitants de Zorglub, êtes vous imposable?</h2>
+          <p> Les habitants de Zorglub paient l'impôt selon les règles suivantes :<br>
+            Les hommes de plus de 20 ans paient l'impôt.<br>
+            Les femmes paient l'impôt si elles ont entre 18 et 35 ans.<br>
+            Les autres ne paient pas d'impôt.</p>
+          <form method="get" action="#">
+            <div class="mb-3">
+              <label for="Age" class="form-label">Quel âge avez vous?</label>
+              <input type="Number" class="form-control" id="Age" value="">
+            </div>
+
+            <label for="Sexe" class="form-label">De quel sexe êtes vous?</label>
+            <select class="form-select" aria-label="Default select example " id="Sexe">
+              <option selected>Choisir</option>
+              <option value="H">Homme</option>
+              <option value="F">Femme</option>
+            </select>
+
+            <button type="button" class="btn btn-warning" id="btn1">Valider</button>
+          </form>
+          <div class="resultat">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Exercice2-->
+
+  <div class="container-fluid  containerP" id="Exercice2">
+    <div class="container-md text-center">
+      <h1>EXERCICE N°2 PHOTOCOPIE</h1>
+      <div class="row">
+        <div class="col bg-light text-dark text-center">
+          <h2>Combien de photocopies voulez-vous faire?</h2>
+          <p>Un magasin de reprographie facture :<br>
+            0,10 € les dix premières photocopies.<br>
+            0,09 € les vingt suivantes.<br>
+            Et 0,08 € au-delà.</p>
+          <form method="get" action="#">
+            <div class="mb-3">
+              <label for="nCopies" class="form-label"></label>
+              <input type="Number" class="form-control" id="nCopies" value="">
+
+            </div>
+            <button type="button" class="btn btn-warning" id="btn2">Calculer</button>
+          </form>
+          <div class="resultat2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Exercice3-->
+
+  <div class="container-fluid  containerP" id="Exercice3">
+    <div class="container-md text-center">
+      <h1>EXERCICE N°3 HEURE</h1>
+      <div class="row">
+        <div class="col bg-light text-dark text-center">
+          <h2>Quel heure sera t'il?</h2>
+          <p>Le programme affiche l'heure qu'il sera à la seconde suivante.</p>
+          <form method="get" action="#">
+            <div class="mb-3">
+              <label for="heure" class="form-label">Entrez l'heure</label>
+              <input type="Number" class="form-control" id="heure" value="">
+            </div>
+            <div>
+              <label for="minutes" class="form-label">Entrez les minutes</label>
+              <input type="Number" class="form-control" id="minutes" value="">
+            </div>
+            <div>
+              <label for="secondes" class="form-label">Entrez les secondes</label>
+              <input type="Number" class="form-control" id="secondes" value="">
+            </div>
+            <button type="button" class="btn btn-warning" id="btn3">Valider</button>
+          </form>
+          <div class="resultat3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Exercice4-->
+
+  <div class="container-fluid  containerP" id="Exercice4">
+    <div class="container-md text-center">
+      <h1>EXERCICE N°4 CAISSE</h1>
+      <div class="row">
+        <div class="col bg-light text-dark text-center">
+          <h2>Combien vous doit-on?</h2>
+          <p>Le programme calcule la monnaie à rendre <br>
+            en billet de 10, billets de 5 et pièces de 1 euros</p>
+          <form method="get" action="#">
+            <div class="mb-3">
+              <label for="MontantPaye" class="form-label">Saisissez le montant total à payer</label>
+              <input type="Number" class="form-control" id="MontantPaye" value="">
+            </div>
+            <div>
+              <label for="MontantDonne" class="form-label">Saisissez le montant donné par le client</label>
+              <input type="Number" class="form-control" id="MontantDonne" value="">
+            </div>
+
+            <button type="button" class="btn btn-warning" id="btn4">Rendre la monnaie</button>
+          </form>
+          <div class="resultat4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Exercice5-->
+
+  <div class="container-fluid  containerP" id="Exercice5">
+    <div class="container-md text-center">
+      <h1>EXERCICE N°5 VERIFICATION EMAIL</h1>
+      <div class="row">
+        <div class="col bg-light text-dark text-center">
+          <h2>Votre adresse Email est elle valide?</h2>
+          <p>Le programme doit déterminer si l'adresse fournit par l'utilisateur est valide ou non.<br>
+            Pour ce faire analysez la chaîne de caractère saisie et trouver si il y a bien la présence d'un "@" et d'un "."<br>
+            Assurez-vous que le point soit bien présent derrière l'arrobase.<br>
+            La vérication de l'email doit se faire sans bouton (seulement avec la saisie du clavier) pour votre
+            formulaire.</p>
+          <form method="get" action="#">
+            <div class="mb-3">
+              <label for="AdresseMail" class="form-label">Saisissez votre adresse Email</label>
+              <input type="text" class="form-control" id="AdresseMail" value="">
+            </div>
+        
+          </form>
+          <div class="resultat5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Exercice6-->
+
+  <div class="container-fluid  containerP" id="Exercice6">
+    <div class="container-md text-center">
+      <h1>EXERCICE N°6 ASSURANCE</h1>
+      <div class="row">
+        <div class="col bg-light text-dark text-center">
+          <h2>A quel tarif avez vous droit?</h2>
+          <p>Le tarif dépend de la situation du conducteur :<br>
+            • un conducteur de moins de 25 ans et titulaire du permis depuis moins de deux ans, se voit attribuer le tarif rouge, si toutefois il n'a jamais été responsable d'accident. Sinon, la compagnie refuse de l'assurer.<br>           
+            • un conducteur de moins de 25 ans et titulaire du permis depuis plus de deux ans, ou de plus de 25 ans mais titulaire du permis depuis moins de deux ans a le droit au tarif orange s'il n'a jamais provoqué d'accident, au tarif rouge pour un accident, sinon il est refusé.<br> 
+            • un conducteur de plus de 25 ans titulaire du permis depuis plus de deux ans bénéficie du tarif vert s'il n'est à l'origine d'aucun accident et du tarif orange pour un accident, du tarif rouge pour deux accidents, et refusé au-delà.<br>
+            • De plus, pour encourager la fidélité des clients acceptés, la compagnie propose un contrat de la couleur immédiatement la plus avantageuse s'il est entré dans la maison depuis plus d'un an.<br>            
+            Dans tous les cas on refuse un conducteur qui aurait plus de 3 accidents.</p>
+          <form method="get" action="#">
+            <div class="mb-3">
+              <label for="Age2" class="form-label">Quel est votre age?</label>
+              <input type="Number" class="form-control" id="Age2" value="">
+            </div>
+            <div>
+              <label for="Permis" class="form-label">Depuis combien de temps avez vous le permis ?</label>
+              <input type="Number" class="form-control" id="Permis" value="">
+            </div>
+            <div>
+              <label for="Accident" class="form-label">Combien avez vous eu d'accident ?</label>
+              <input type="Number" class="form-control" id="Accident" value="">
+            </div>
+            <div>
+              <label for="Assurance" class="form-label">Depuis combien de temps êtes vous assuré chez nous ?</label>
+              <input type="Number" class="form-control" id="Assurance" value="">
+            </div>
+            <button type="button" class="btn btn-warning" id="btn6">Calcul du tarif</button>
+          </form>
+          <div class="resultat6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

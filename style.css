@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(39, 39, 39);
+ 
+}
+
+.container-md{
+    margin-top: 100px;
+    margin-bottom: 140px;
+
+    
+}
+
+.containerP{
+    background-image: url(Image/fondJS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.col{box-shadow:3px 3px 3px rgb(148, 148, 148);;
+
+}
+
+
+h1 {
+    text-decoration: underline;
+    padding-top:50px ;
+    margin:50px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.col{
+    margin: 50px; 
+    padding:50px;  
+}
+
+.btn{
+    margin: 50px;
+}
+
+.response{
+    background-color:red;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+
+.response2{
+    background-color:green;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+
+.tarif{
+    background-color:rgb(24, 132, 204);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.tarif2{
+    background-color:rgb(253, 194, 1);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.tarif3{
+    background-color:rgb(109, 109, 109);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1200px){
+
+.containerP{
+    background-image: url(Image/fondJS2.jpg);
+}
+
+.response{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.response2{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.tarif{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.tarif2{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.tarif3{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+    }
+
+
